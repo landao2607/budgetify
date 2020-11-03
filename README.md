@@ -16,4 +16,5 @@ This is a money tracker app run on an iOS device.
   3. Clone the file in your local desired location.
   
 **Step 3. Test**
+
   Run the project and test the functionalities. 
