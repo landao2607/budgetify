@@ -17,4 +17,4 @@ A money management app run on iOS devices. May you never have to say you're brok
   
 **Step 3. Test**
 
-  Run the project and test the functionalities. 
+  Run the project and test the functionalities. This project looks and works best for iPhone 11.
