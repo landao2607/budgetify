@@ -6,7 +6,7 @@ This is a money tracker app run on an iOS device.
 
 **Installation**
 
-**Step 1. Set up the environment.**
+**Step 1. Set up the environment**
   1. Download Xcode from App Store.
   2. Install Xcode on your machine.
   
