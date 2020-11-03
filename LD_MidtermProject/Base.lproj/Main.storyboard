@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9NQ-8D-kH6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LD_MidtermProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVf-Pq-4h3">
+                                <rect key="frame" x="29" y="744" width="154" height="56"/>
+                                <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="0.68999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="rAm-BE-6Eb"/>
+                                </constraints>
+                                <state key="normal" title="Create New Expense">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lG9-9P-OCx" kind="show" id="ksX-9N-P6v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZa-C6-hmB">
+                                <rect key="frame" x="136" y="192" width="143" height="38"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
+                                <state key="normal" title="Balance:                     ">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="S0F-HY-olY">
+                                <rect key="frame" x="29" y="97" width="356" height="29"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expense $0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CaI-bG-K1X">
+                                <rect key="frame" x="62" y="143" width="106" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="0.68999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Rrs-Qb-poA"/>
+                                    <constraint firstAttribute="width" constant="106" id="TDP-Rq-SeA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Income $0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="D5h-n7-mYo">
+                                <rect key="frame" x="246" y="143" width="106" height="35"/>
+                                <color key="backgroundColor" red="0.4350959063" green="0.85647737980000005" blue="0.54184681180000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="D5h-n7-mYo" secondAttribute="height" multiplier="106:35" id="IaH-SN-ZNI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQo-oS-uRn">
+                                <rect key="frame" x="239" y="744" width="146" height="56"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="0.6875" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GQo-oS-uRn" secondAttribute="height" multiplier="27:10" constant="-5.2000000000000171" id="A2l-gh-dRK"/>
+                                </constraints>
+                                <state key="normal" title="Create New Income">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DoP-2t-W3W" kind="show" id="0bJ-d4-5xe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57536691429999998" green="0.82633191350000001" blue="0.9311282635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sVf-Pq-4h3" firstAttribute="top" secondItem="GQo-oS-uRn" secondAttribute="top" id="2lW-gF-gSc"/>
+                            <constraint firstItem="D5h-n7-mYo" firstAttribute="leading" secondItem="CaI-bG-K1X" secondAttribute="trailing" constant="78" id="4CW-Jj-san"/>
+                            <constraint firstItem="GQo-oS-uRn" firstAttribute="leading" secondItem="sVf-Pq-4h3" secondAttribute="trailing" constant="56" id="7XR-PA-zZL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D5h-n7-mYo" secondAttribute="trailing" constant="62" id="AGo-s7-iR6"/>
+                            <constraint firstItem="CaI-bG-K1X" firstAttribute="top" secondItem="S0F-HY-olY" secondAttribute="bottom" constant="17" id="MJD-Li-eWM"/>
+                            <constraint firstItem="sVf-Pq-4h3" firstAttribute="leading" secondItem="S0F-HY-olY" secondAttribute="leading" id="QgN-Qc-F9e"/>
+                            <constraint firstItem="sVf-Pq-4h3" firstAttribute="baseline" secondItem="GQo-oS-uRn" secondAttribute="firstBaseline" id="RpJ-0r-3q5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GQo-oS-uRn" secondAttribute="trailing" constant="29" id="WuB-qm-izV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zZa-C6-hmB" secondAttribute="trailing" constant="135" id="YYl-DX-gVo"/>
+                            <constraint firstItem="S0F-HY-olY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="a2w-uD-Kna"/>
+                            <constraint firstItem="zZa-C6-hmB" firstAttribute="top" secondItem="CaI-bG-K1X" secondAttribute="bottom" constant="14" id="d5c-cp-dFd"/>
+                            <constraint firstItem="D5h-n7-mYo" firstAttribute="top" secondItem="S0F-HY-olY" secondAttribute="bottom" constant="17" id="f2c-xJ-EOc"/>
+                            <constraint firstItem="GQo-oS-uRn" firstAttribute="top" secondItem="zZa-C6-hmB" secondAttribute="bottom" constant="514" id="pN8-eA-3Fu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S0F-HY-olY" secondAttribute="trailing" constant="29" id="pNJ-Sc-ozi"/>
+                            <constraint firstItem="CaI-bG-K1X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="pb0-zm-keQ"/>
+                            <constraint firstItem="S0F-HY-olY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="vc6-Jo-8lp"/>
+                            <constraint firstItem="zZa-C6-hmB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="yCp-Hs-K2D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main" id="ZBJ-G9-0fv"/>
+                    <connections>
+                        <outlet property="btn_Balance" destination="zZa-C6-hmB" id="tn4-jk-8CM"/>
+                        <outlet property="btn_CreateNewExpense" destination="sVf-Pq-4h3" id="mBm-GB-Due"/>
+                        <outlet property="btn_CreateNewIncome" destination="GQo-oS-uRn" id="hNc-F6-V2H"/>
+                        <outlet property="lbl_ExpenseTotal" destination="CaI-bG-K1X" id="ZHh-iP-AnS"/>
+                        <outlet property="lbl_IncomeTotal" destination="D5h-n7-mYo" id="yri-8b-c8m"/>
+                        <outlet property="lbl_Month" destination="S0F-HY-olY" id="RMC-Vz-7Ql"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766.66666666666674" y="43.526785714285715"/>
+        </scene>
+        <!--Expense View Controller-->
+        <scene sceneID="V2x-nj-Nny">
+            <objects>
+                <viewController storyboardIdentifier="ExpenseViewController" id="lG9-9P-OCx" customClass="ExpenseViewController" customModule="LD_MidtermProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PUU-MZ-qu7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pick a date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rVy-EM-7HH">
+                                <rect key="frame" x="51" y="120" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Note (Optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wtm-jS-0CM">
+                                <rect key="frame" x="20" y="280" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGI-Nn-QCf">
+                                <rect key="frame" x="0.0" y="426" width="414" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose category: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xha-5d-tmX">
+                                <rect key="frame" x="20" y="358" width="176" height="29"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9m-nr-Dos">
+                                <rect key="frame" x="143" y="667" width="128" height="41"/>
+                                <color key="backgroundColor" red="0.83608698839999995" green="0.64675110579999995" blue="0.23988217119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_DoneIsClicked:" destination="lG9-9P-OCx" eventType="touchUpInside" id="RF5-fe-giU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter expense amount:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="i2c-4U-Toj">
+                                <rect key="frame" x="20" y="213" width="222.5" height="29"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aza-VT-Itf">
+                                <rect key="frame" x="250" y="210" width="145" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57536691429999998" green="0.82633191350000001" blue="0.9311282635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="i2c-4U-Toj" firstAttribute="leading" secondItem="zaw-DI-v1q" secondAttribute="leading" constant="20" id="0nD-Ob-WCb"/>
+                            <constraint firstItem="zaw-DI-v1q" firstAttribute="trailing" secondItem="d9m-nr-Dos" secondAttribute="trailing" constant="143" id="4fw-2s-YTU"/>
+                            <constraint firstItem="jGI-Nn-QCf" firstAttribute="leading" secondItem="zaw-DI-v1q" secondAttribute="leading" id="CBc-TP-ANt"/>
+                            <constraint firstItem="wtm-jS-0CM" firstAttribute="top" secondItem="i2c-4U-Toj" secondAttribute="bottom" constant="38" id="DS2-ev-EcU"/>
+                            <constraint firstItem="Aza-VT-Itf" firstAttribute="top" secondItem="rVy-EM-7HH" secondAttribute="bottom" constant="56" id="I6G-8J-AdA"/>
+                            <constraint firstItem="wtm-jS-0CM" firstAttribute="leading" secondItem="zaw-DI-v1q" secondAttribute="leading" constant="20" id="KG8-sf-c9V"/>
+                            <constraint firstItem="d9m-nr-Dos" firstAttribute="leading" secondItem="zaw-DI-v1q" secondAttribute="leading" constant="143" id="KNK-Yp-rm2"/>
+                            <constraint firstItem="rVy-EM-7HH" firstAttribute="top" secondItem="zaw-DI-v1q" secondAttribute="top" constant="32" id="LOY-OP-nEy"/>
+                            <constraint firstItem="i2c-4U-Toj" firstAttribute="top" secondItem="rVy-EM-7HH" secondAttribute="bottom" constant="59" id="PpW-tD-hAY"/>
+                            <constraint firstItem="xha-5d-tmX" firstAttribute="leading" secondItem="zaw-DI-v1q" secondAttribute="leading" constant="20" id="UV0-80-Oy8"/>
+                            <constraint firstItem="xha-5d-tmX" firstAttribute="top" secondItem="wtm-jS-0CM" secondAttribute="bottom" constant="44" id="XNF-zr-pJ3"/>
+                            <constraint firstItem="jGI-Nn-QCf" firstAttribute="top" secondItem="xha-5d-tmX" secondAttribute="bottom" constant="39" id="XYm-rM-LTR"/>
+                            <constraint firstItem="zaw-DI-v1q" firstAttribute="trailing" secondItem="rVy-EM-7HH" secondAttribute="trailing" constant="50" id="f8P-Qp-V6a"/>
+                            <constraint firstItem="rVy-EM-7HH" firstAttribute="leading" secondItem="zaw-DI-v1q" secondAttribute="leading" constant="51" id="nTs-QR-1dC"/>
+                            <constraint firstItem="jGI-Nn-QCf" firstAttribute="trailing" secondItem="zaw-DI-v1q" secondAttribute="trailing" id="oRH-Fa-i3K"/>
+                            <constraint firstItem="d9m-nr-Dos" firstAttribute="top" secondItem="jGI-Nn-QCf" secondAttribute="bottom" constant="25" id="sdL-bW-Mnu"/>
+                            <constraint firstItem="Aza-VT-Itf" firstAttribute="leading" secondItem="i2c-4U-Toj" secondAttribute="trailing" constant="7.5" id="v3U-94-Teq"/>
+                            <constraint firstItem="zaw-DI-v1q" firstAttribute="trailing" secondItem="xha-5d-tmX" secondAttribute="trailing" constant="218" id="vXe-cr-Rkd"/>
+                            <constraint firstItem="Aza-VT-Itf" firstAttribute="leading" secondItem="i2c-4U-Toj" secondAttribute="trailing" constant="7.5" id="wDa-QZ-cjw"/>
+                            <constraint firstItem="zaw-DI-v1q" firstAttribute="trailing" secondItem="Aza-VT-Itf" secondAttribute="trailing" constant="19" id="xrd-Lw-aaW"/>
+                            <constraint firstItem="zaw-DI-v1q" firstAttribute="trailing" secondItem="wtm-jS-0CM" secondAttribute="trailing" constant="20" id="ye7-ds-Fsv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zaw-DI-v1q"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KnB-vY-f0p"/>
+                    <connections>
+                        <outlet property="btn_Done" destination="d9m-nr-Dos" id="Vty-ro-i3V"/>
+                        <outlet property="lbl_Category" destination="xha-5d-tmX" id="c9o-Hi-G4I"/>
+                        <outlet property="lbl_Expense" destination="i2c-4U-Toj" id="P00-ze-5M1"/>
+                        <outlet property="pickCategory" destination="jGI-Nn-QCf" id="Kso-5G-dSi"/>
+                        <outlet property="txt_EnterExpense" destination="Aza-VT-Itf" id="xSW-Kd-CdW"/>
+                        <outlet property="txt_EnterNote" destination="wtm-jS-0CM" id="LWS-bZ-36J"/>
+                        <outlet property="txt_SelectDate" destination="rVy-EM-7HH" id="cXv-mh-apD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bmt-FF-jsB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78.260869565217391" y="728.57142857142856"/>
+        </scene>
+        <!--Income View Controller-->
+        <scene sceneID="vob-3F-bwZ">
+            <objects>
+                <viewController storyboardIdentifier="IncomeViewController" id="DoP-2t-W3W" customClass="IncomeViewController" customModule="LD_MidtermProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lrx-6F-rxs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pick a date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rpb-Xp-Bph">
+                                <rect key="frame" x="51" y="116" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Note (Optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="efe-hV-Qh9">
+                                <rect key="frame" x="20" y="276" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KUc-9F-peb">
+                                <rect key="frame" x="0.0" y="422" width="414" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose category: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zEs-PD-CNg">
+                                <rect key="frame" x="20" y="354" width="176" height="29"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLU-TZ-Naa">
+                                <rect key="frame" x="143" y="663" width="128" height="41"/>
+                                <color key="backgroundColor" red="0.83608698839999995" green="0.64675110579999995" blue="0.23988217119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_DoneIsClicked:" destination="DoP-2t-W3W" eventType="touchUpInside" id="6qH-LN-LHe"/>
+                                    <action selector="btn_DoneIsClicked:" destination="lG9-9P-OCx" eventType="touchUpInside" id="kM6-nN-5fO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter income amount:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cHw-my-c1C">
+                                <rect key="frame" x="20" y="209" width="213" height="29"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L7W-RC-PVy">
+                                <rect key="frame" x="241" y="206" width="153" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57536691429999998" green="0.82633191350000001" blue="0.9311282635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="L7W-RC-PVy" firstAttribute="leading" secondItem="cHw-my-c1C" secondAttribute="trailing" constant="8" id="2up-Ca-rAM"/>
+                            <constraint firstItem="zEs-PD-CNg" firstAttribute="top" secondItem="efe-hV-Qh9" secondAttribute="bottom" constant="44" id="5iu-WC-QFn"/>
+                            <constraint firstItem="uZl-YU-0Js" firstAttribute="trailing" secondItem="L7W-RC-PVy" secondAttribute="trailing" constant="20" id="7Wx-54-BwK"/>
+                            <constraint firstItem="KUc-9F-peb" firstAttribute="trailing" secondItem="uZl-YU-0Js" secondAttribute="trailing" id="9zm-HH-9Pa"/>
+                            <constraint firstItem="rpb-Xp-Bph" firstAttribute="top" secondItem="uZl-YU-0Js" secondAttribute="top" constant="28" id="A1I-M0-oqO"/>
+                            <constraint firstItem="uZl-YU-0Js" firstAttribute="trailing" secondItem="rpb-Xp-Bph" secondAttribute="trailing" constant="50" id="DHy-cO-CXs"/>
+                            <constraint firstItem="rLU-TZ-Naa" firstAttribute="leading" secondItem="uZl-YU-0Js" secondAttribute="leading" constant="143" id="DVh-UR-cKF"/>
+                            <constraint firstItem="KUc-9F-peb" firstAttribute="top" secondItem="zEs-PD-CNg" secondAttribute="bottom" constant="39" id="M7v-EN-W4C"/>
+                            <constraint firstItem="L7W-RC-PVy" firstAttribute="top" secondItem="rpb-Xp-Bph" secondAttribute="bottom" constant="56" id="MDi-YO-t00"/>
+                            <constraint firstItem="uZl-YU-0Js" firstAttribute="trailing" secondItem="efe-hV-Qh9" secondAttribute="trailing" constant="20" id="Mec-TA-9nf"/>
+                            <constraint firstItem="uZl-YU-0Js" firstAttribute="trailing" secondItem="zEs-PD-CNg" secondAttribute="trailing" constant="218" id="RKW-gQ-CgP"/>
+                            <constraint firstItem="uZl-YU-0Js" firstAttribute="trailing" secondItem="rLU-TZ-Naa" secondAttribute="trailing" constant="143" id="TeS-QZ-B7X"/>
+                            <constraint firstItem="efe-hV-Qh9" firstAttribute="leading" secondItem="uZl-YU-0Js" secondAttribute="leading" constant="20" id="XVA-Gf-whM"/>
+                            <constraint firstItem="cHw-my-c1C" firstAttribute="leading" secondItem="uZl-YU-0Js" secondAttribute="leading" constant="20" id="mCW-J5-vEI"/>
+                            <constraint firstItem="rpb-Xp-Bph" firstAttribute="leading" secondItem="uZl-YU-0Js" secondAttribute="leading" constant="51" id="mhV-1r-dcJ"/>
+                            <constraint firstItem="KUc-9F-peb" firstAttribute="leading" secondItem="uZl-YU-0Js" secondAttribute="leading" id="oma-yj-57U"/>
+                            <constraint firstItem="cHw-my-c1C" firstAttribute="top" secondItem="rpb-Xp-Bph" secondAttribute="bottom" constant="59" id="t19-Dr-9wX"/>
+                            <constraint firstItem="rLU-TZ-Naa" firstAttribute="top" secondItem="KUc-9F-peb" secondAttribute="bottom" constant="25" id="uH3-kG-28S"/>
+                            <constraint firstItem="L7W-RC-PVy" firstAttribute="leading" secondItem="cHw-my-c1C" secondAttribute="trailing" constant="8" id="wsX-we-rEe"/>
+                            <constraint firstItem="zEs-PD-CNg" firstAttribute="leading" secondItem="uZl-YU-0Js" secondAttribute="leading" constant="20" id="xmU-br-SGB"/>
+                            <constraint firstItem="efe-hV-Qh9" firstAttribute="top" secondItem="cHw-my-c1C" secondAttribute="bottom" constant="38" id="yJQ-dM-BsU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uZl-YU-0Js"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Npt-lk-utP"/>
+                    <connections>
+                        <outlet property="btn_Done" destination="rLU-TZ-Naa" id="AZa-QL-KpT"/>
+                        <outlet property="lbl_Category" destination="zEs-PD-CNg" id="dFm-Fl-TMj"/>
+                        <outlet property="lbl_Income" destination="cHw-my-c1C" id="52g-v0-CyQ"/>
+                        <outlet property="pickCategory" destination="KUc-9F-peb" id="bkx-B9-1qr"/>
+                        <outlet property="txt_EnterIncome" destination="L7W-RC-PVy" id="T3E-Q8-18D"/>
+                        <outlet property="txt_EnterNote" destination="efe-hV-Qh9" id="97e-Mh-UB3"/>
+                        <outlet property="txt_SelectDate" destination="rpb-Xp-Bph" id="35Y-aj-WEj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9A3-uy-MqQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766.66666666666674" y="728.57142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VvU-hy-l1g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9NQ-8D-kH6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5pG-cE-QdB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Lf0-x4-rrj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qI9-6e-dn0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78" y="44"/>
+        </scene>
+    </scenes>
+</document>
