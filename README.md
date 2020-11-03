@@ -1,5 +1,5 @@
 # money-tracker-app
-This is a money tracker app run on an iOS device.
+A money management app run on iOS devices. May you never have to say you're broke again.
 
 **Functionalities**
 
