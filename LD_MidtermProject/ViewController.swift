@@ -5,15 +5,16 @@
 //  Programming Language: Swift 5 on Xcode 11
 //  Target Device: iPhone 11
 //  Version: iOS 13.4
-//  This money tracking app lets user enter amount of expense/income and generates a chart of total income and expense monthly.
+//  This money tracking app lets user enter amount of expense/income and generates a chart of
+//  total income and expense monthly.
 //
-//  For this midterm project, I created a chart and inputs for users. For final project, I will finish up with putting user's input in arrays and calculate the total and balance, as well as updating the chart. The data will be memorized even when the app is closed. I will also create a ViewController for the Balance button that shows all the transactions.
+//  For this midterm project, I created a chart and inputs for users. For final project, I will finish up with putting user's input in arrays and calculate the total and balance, as well as updating the chart. I will also create a ViewController for the Balance button that shows all the transactions.
 //
 //  Created by Lan Dao on 10/17/20.
 //  Copyright © 2020 IS322. All rights reserved.
 //
 
-import Charts //I installed CocoaPod to import Charts. Please look at the Instruction doc to install the environment. 
+import Charts //I installed CocoaPod to import Charts
 import UIKit
 
 class ViewController: UIViewController, ChartViewDelegate {

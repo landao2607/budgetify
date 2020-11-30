@@ -11,7 +11,7 @@ import UIKit
 class ExpenseViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,UITextFieldDelegate {
     
     @IBOutlet weak var lbl_Expense: UILabel!
-    @IBOutlet weak var txt_EnterExpense: UITextField! //This textfield is in Decimal Pad type of keyboard. Ctrl+K to pop up the keyboard. However, if you type directly through the keyboard on your machine, you can still type in other characters. I tried to filter the keyboard with only numbers with TextField function, but it filtered both this txt_EnterExpense and txt_EnterNote. I'm still in the process of fixing this. But for now, with the keyboard type, it should work decently enough when users use the app on their phones.
+    @IBOutlet weak var txt_EnterExpense: UITextField!
     @IBOutlet weak var txt_EnterNote: UITextField!
     @IBOutlet weak var lbl_Category: UILabel!
     @IBOutlet weak var pickCategory: UIPickerView!
@@ -42,7 +42,6 @@ class ExpenseViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
                 }
         
         //What's left for Final Project
-        //After entering the amount of money and click Done, this message will pop up
         strErrorMsg = "After users input all the information, the label 'Enpense' & the chart will be updated. All the info will also show up in the Expense Dropdown in Balance VC."  //My message
         fncShowErrors()
         return //End the failed conversion
